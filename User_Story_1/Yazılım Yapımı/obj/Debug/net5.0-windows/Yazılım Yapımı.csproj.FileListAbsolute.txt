@@ -1,0 +1,19 @@
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\bin\Debug\net5.0-windows\Yazılım Yapımı.exe
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\bin\Debug\net5.0-windows\Yazılım Yapımı.deps.json
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\bin\Debug\net5.0-windows\Yazılım Yapımı.runtimeconfig.json
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\bin\Debug\net5.0-windows\Yazılım Yapımı.runtimeconfig.dev.json
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\bin\Debug\net5.0-windows\Yazılım Yapımı.dll
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\bin\Debug\net5.0-windows\ref\Yazılım Yapımı.dll
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\bin\Debug\net5.0-windows\Yazılım Yapımı.pdb
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.csprojAssemblyReference.cache
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım_Yapımı.Form1.resources
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.csproj.GenerateResource.cache
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.AssemblyInfoInputs.cache
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.AssemblyInfo.cs
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.csproj.CoreCompileInputs.cache
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.dll
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\obj\Debug\net5.0-windows\ref\Yazılım Yapımı.dll
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.pdb
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.genruntimeconfig.cache
+C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım_Yapımı.KayitOl.resources
