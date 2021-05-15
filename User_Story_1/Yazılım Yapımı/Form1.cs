@@ -19,19 +19,14 @@ namespace Yazılım_Yapımı
 
         public List<Kullanici> kullanicilar = new List<Kullanici>();
         public List<Admin> admins = new List<Admin>();
-        
+        public Kullanici kullanici = new Kullanici();
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-        }
-
-        private void Lbl_KayitOl_Click(object sender, EventArgs e)
-        {
-            KayitOl kayit = new KayitOl();
-            this.Hide();
-            kayit.ShowDialog();
-
+            Txt_Password.PasswordChar = '*';
+            Txt_Sifre.PasswordChar = '*';
         }
 
         private void Btn_Giris_Click(object sender, EventArgs e)
@@ -62,12 +57,46 @@ namespace Yazılım_Yapımı
         {
             if(checkBox1.Checked)
             {
-                Txt_Sifre.PasswordChar = '*';
+                Txt_Sifre.PasswordChar = '\0';
             }
             else
             {
-                Txt_Sifre.PasswordChar = '\0';
+                Txt_Sifre.PasswordChar = '*';
             }
+        }
+
+        private void btnGirisYap_Click(object sender, EventArgs e)
+        {
+            panelGiris.BringToFront();
+            btnGirisYap.BackColor = Color.FromArgb(146, 240, 252);
+            btnKayitOl.BackColor = Color.FromArgb(41, 149, 163);
+        }
+
+        private void btnKayitOl_Click(object sender, EventArgs e)
+        {
+            panelKayıtOl.BringToFront();
+            btnKayitOl.BackColor = Color.FromArgb(146, 240, 252);
+            btnGirisYap.BackColor = Color.FromArgb(41, 149, 163);
+        }
+
+        private void Btn_KayitOl_Click(object sender, EventArgs e)
+        {
+            kullanici.Ad = Txt_Ad.Text;
+            kullanici.Soyad = TxtSoyad.Text;
+            kullanici.KullaniciAdi = Txt_KullaniciAdi.Text;
+            kullanici.Password = Txt_Password.Text;
+            kullanici.TCKimlikNo = Txt_TCKimlikNo.Text;
+            kullanici.Telefon = Txt_Telefon.Text;
+            kullanici.Email = Txt_Email.Text;
+            kullanici.Adres = Txt_Adres.Text;
+
+            kullanicilar.Add(kullanici);
+            MessageBox.Show("Başarıyla Kayıt Olundu...");
+        }
+
+        private void btn_Kapat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

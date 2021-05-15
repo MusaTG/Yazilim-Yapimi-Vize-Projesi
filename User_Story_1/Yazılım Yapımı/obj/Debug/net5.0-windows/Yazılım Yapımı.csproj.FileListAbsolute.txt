@@ -17,3 +17,22 @@ C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\obj\Debug\net5
 C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.pdb
 C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.genruntimeconfig.cache
 C:\Users\yusuf\source\repos\Yazılım Yapımı\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım_Yapımı.KayitOl.resources
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\bin\Debug\net5.0-windows\Yazılım Yapımı.exe
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\bin\Debug\net5.0-windows\Yazılım Yapımı.deps.json
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\bin\Debug\net5.0-windows\Yazılım Yapımı.runtimeconfig.json
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\bin\Debug\net5.0-windows\Yazılım Yapımı.runtimeconfig.dev.json
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\bin\Debug\net5.0-windows\Yazılım Yapımı.dll
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\bin\Debug\net5.0-windows\ref\Yazılım Yapımı.dll
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\bin\Debug\net5.0-windows\Yazılım Yapımı.pdb
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.csprojAssemblyReference.cache
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım_Yapımı.Form1.resources
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.csproj.GenerateResource.cache
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.AssemblyInfoInputs.cache
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.AssemblyInfo.cs
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.csproj.CoreCompileInputs.cache
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.dll
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\obj\Debug\net5.0-windows\ref\Yazılım Yapımı.dll
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.pdb
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım Yapımı.genruntimeconfig.cache
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\User_Story_1\Yazılım Yapımı\obj\Debug\net5.0-windows\Yazılım_Yapımı.Properties.Resources.resources

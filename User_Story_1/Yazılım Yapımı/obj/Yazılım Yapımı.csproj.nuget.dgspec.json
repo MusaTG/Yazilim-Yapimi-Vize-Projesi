@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yusuf\\source\\repos\\Yazılım Yapımı\\Yazılım Yapımı\\Yazılım Yapımı.csproj": {}
+    "C:\\Users\\adilk\\Documents\\GitHub\\Yazilim-Yapimi-Vize-Projesi\\User_Story_1\\Yazılım Yapımı\\Yazılım Yapımı.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yusuf\\source\\repos\\Yazılım Yapımı\\Yazılım Yapımı\\Yazılım Yapımı.csproj": {
+    "C:\\Users\\adilk\\Documents\\GitHub\\Yazilim-Yapimi-Vize-Projesi\\User_Story_1\\Yazılım Yapımı\\Yazılım Yapımı.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yusuf\\source\\repos\\Yazılım Yapımı\\Yazılım Yapımı\\Yazılım Yapımı.csproj",
+        "projectUniqueName": "C:\\Users\\adilk\\Documents\\GitHub\\Yazilim-Yapimi-Vize-Projesi\\User_Story_1\\Yazılım Yapımı\\Yazılım Yapımı.csproj",
         "projectName": "Yazılım Yapımı",
-        "projectPath": "C:\\Users\\yusuf\\source\\repos\\Yazılım Yapımı\\Yazılım Yapımı\\Yazılım Yapımı.csproj",
-        "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yusuf\\source\\repos\\Yazılım Yapımı\\Yazılım Yapımı\\obj\\",
+        "projectPath": "C:\\Users\\adilk\\Documents\\GitHub\\Yazilim-Yapimi-Vize-Projesi\\User_Story_1\\Yazılım Yapımı\\Yazılım Yapımı.csproj",
+        "packagesPath": "C:\\Users\\adilk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adilk\\Documents\\GitHub\\Yazilim-Yapimi-Vize-Projesi\\User_Story_1\\Yazılım Yapımı\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\adilk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
