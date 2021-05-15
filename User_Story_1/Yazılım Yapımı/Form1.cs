@@ -27,6 +27,9 @@ namespace Yazılım_Yapımı
         {
             Txt_Password.PasswordChar = '*';
             Txt_Sifre.PasswordChar = '*';
+            panelGiris.BringToFront();
+            btnGirisYap.BackColor = Color.FromArgb(146, 240, 252);
+            btnKayitOl.BackColor = Color.FromArgb(41, 149, 163);
         }
 
         private void Btn_Giris_Click(object sender, EventArgs e)
@@ -44,24 +47,12 @@ namespace Yazılım_Yapımı
             {
                 if(x.KullaniciAdi == Txt_KullaniciAdi.Text && x.Password == Txt_Sifre.Text)
                 {
-                    //Giris
+                    MessageBox.Show("başarılı");
                 }
                 else
                 {
                     MessageBox.Show("Kullanici Adi veya Sifre Yanlis!");
                 }
-            }
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if(checkBox1.Checked)
-            {
-                Txt_Sifre.PasswordChar = '\0';
-            }
-            else
-            {
-                Txt_Sifre.PasswordChar = '*';
             }
         }
 
@@ -83,7 +74,7 @@ namespace Yazılım_Yapımı
         {
             kullanici.Ad = Txt_Ad.Text;
             kullanici.Soyad = TxtSoyad.Text;
-            kullanici.KullaniciAdi = Txt_KullaniciAdi.Text;
+            kullanici.KullaniciAdi = Txt_UserName.Text;
             kullanici.Password = Txt_Password.Text;
             kullanici.TCKimlikNo = Txt_TCKimlikNo.Text;
             kullanici.Telefon = Txt_Telefon.Text;
@@ -97,6 +88,18 @@ namespace Yazılım_Yapımı
         private void btn_Kapat_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                Txt_Sifre.PasswordChar = '\0';
+            }
+            else
+            {
+                Txt_Sifre.PasswordChar = '*';
+            }
         }
     }
 }
