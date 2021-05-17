@@ -65,7 +65,6 @@ namespace Yazılım_Yapımı_3
             {
                 AdminGirisi AdminEkrani = new AdminGirisi();
                 AdminEkrani.kullanicilar = this.kullanicilar;
-                this.Hide();
                 AdminEkrani.ShowDialog();
                 return;
             }

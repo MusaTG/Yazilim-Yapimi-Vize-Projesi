@@ -31,5 +31,10 @@ namespace Yazılım_Yapımı_3
             MessageBox.Show("Kayıt Başarılı!");
             this.Close();
         }
+
+        private void KullaniciKayit_Load(object sender, EventArgs e)
+        {
+            Txt_Sifre.PasswordChar = '*';
+        }
     }
 }

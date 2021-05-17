@@ -9,10 +9,7 @@ namespace Yazılım_Yapımı_3
         public string Ad { get; set; }
         public int KG { get; set; }
 
-        public override string ToString()
-        {
-            return Ad;
-        }
+        
 
     }
 }

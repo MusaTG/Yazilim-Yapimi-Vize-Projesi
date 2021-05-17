@@ -16,6 +16,8 @@ namespace Yazılım_Yapımı_3
         public string Adres { get; set; }
         public int Bakiye { get; set; }
 
+        public bool OnayTuru { get; set; } //true ise urun yazdır, false ise bakiye yazıdr
+
 
         public List<Urun> Urunler = new List<Urun>();
 
@@ -24,9 +26,9 @@ namespace Yazılım_Yapımı_3
 
         public override string ToString()
         {
-            if(true)
+            if(OnayTuru)
             {
-                return KullaniciAdi + " Kullanıcısı " + OnayBekleyenUrun.KG.ToString() + " Kg " + OnayBekleyenUrun;
+                return KullaniciAdi + " Kullanıcısı " + OnayBekleyenUrun.KG.ToString() + " Kg " + OnayBekleyenUrun.Ad;
             }
             else
             {

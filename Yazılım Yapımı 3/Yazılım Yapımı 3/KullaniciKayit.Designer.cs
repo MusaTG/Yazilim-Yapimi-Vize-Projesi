@@ -234,6 +234,7 @@ namespace Yazılım_Yapımı_3
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "KullaniciKayit";
             this.Text = "KullaniciKayit";
+            this.Load += new System.EventHandler(this.KullaniciKayit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
