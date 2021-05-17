@@ -81,6 +81,7 @@ namespace Yazılım_Yapımı_3
                     {
                         KullaniciGirisi KullaniciEkrani = new KullaniciGirisi();
                         KullaniciEkrani.kullanici = x;
+                        KullaniciEkrani.urunIcin = kullanicilar;
                         KullaniciEkrani.ShowDialog();
                         flag = true;
                         return;

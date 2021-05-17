@@ -54,10 +54,12 @@ namespace Yazılım_Yapımı_3
                         }
                     }
                     if(flag == false)
-                        x.Urunler.Add(new Urun { Ad = x.OnayBekleyenUrun.Ad, KG = x.OnayBekleyenUrun.KG});
+                        x.Urunler.Add(new Urun { Ad = x.OnayBekleyenUrun.Ad, KG = x.OnayBekleyenUrun.KG,Fiyat=x.OnayBekleyenUrun.Fiyat,UrunKod=x.OnayBekleyenUrun.UrunKod});
 
                     x.OnayBekleyenUrun.Ad = "";
                     x.OnayBekleyenUrun.KG = 0;
+                    x.OnayBekleyenUrun.UrunKod = 0;
+                    x.OnayBekleyenUrun.Fiyat = 0;
                     LB_Urun.Items.Remove(LB_Urun.SelectedItem);
                     MessageBox.Show("Urun Onaylandı!");
                     break;

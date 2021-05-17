@@ -52,6 +52,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Txt_Soyad
             // 
+            this.Txt_Soyad.ForeColor = System.Drawing.Color.Maroon;
             this.Txt_Soyad.Location = new System.Drawing.Point(173, 125);
             this.Txt_Soyad.Name = "Txt_Soyad";
             this.Txt_Soyad.Size = new System.Drawing.Size(135, 35);
@@ -60,6 +61,7 @@ namespace Yazılım_Yapımı_3
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Maroon;
             this.label2.Location = new System.Drawing.Point(93, 130);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 30);
@@ -68,6 +70,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Txt_Ad
             // 
+            this.Txt_Ad.ForeColor = System.Drawing.Color.Maroon;
             this.Txt_Ad.Location = new System.Drawing.Point(173, 84);
             this.Txt_Ad.Name = "Txt_Ad";
             this.Txt_Ad.Size = new System.Drawing.Size(135, 35);
@@ -76,6 +79,7 @@ namespace Yazılım_Yapımı_3
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
             this.label1.Location = new System.Drawing.Point(123, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 30);
@@ -84,6 +88,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Txt_Sifre
             // 
+            this.Txt_Sifre.ForeColor = System.Drawing.Color.Maroon;
             this.Txt_Sifre.Location = new System.Drawing.Point(173, 207);
             this.Txt_Sifre.Name = "Txt_Sifre";
             this.Txt_Sifre.Size = new System.Drawing.Size(135, 35);
@@ -92,6 +97,7 @@ namespace Yazılım_Yapımı_3
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Maroon;
             this.label3.Location = new System.Drawing.Point(108, 212);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 30);
@@ -100,6 +106,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Txt_KullaniciAdi
             // 
+            this.Txt_KullaniciAdi.ForeColor = System.Drawing.Color.Maroon;
             this.Txt_KullaniciAdi.Location = new System.Drawing.Point(173, 166);
             this.Txt_KullaniciAdi.Name = "Txt_KullaniciAdi";
             this.Txt_KullaniciAdi.Size = new System.Drawing.Size(135, 35);
@@ -108,6 +115,7 @@ namespace Yazılım_Yapımı_3
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Maroon;
             this.label4.Location = new System.Drawing.Point(35, 171);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(132, 30);
@@ -116,6 +124,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Txt_Telefon
             // 
+            this.Txt_Telefon.ForeColor = System.Drawing.Color.Maroon;
             this.Txt_Telefon.Location = new System.Drawing.Point(173, 289);
             this.Txt_Telefon.Name = "Txt_Telefon";
             this.Txt_Telefon.Size = new System.Drawing.Size(135, 35);
@@ -124,6 +133,7 @@ namespace Yazılım_Yapımı_3
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Maroon;
             this.label5.Location = new System.Drawing.Point(82, 294);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 30);
@@ -132,6 +142,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Txt_TCKimlikNo
             // 
+            this.Txt_TCKimlikNo.ForeColor = System.Drawing.Color.Maroon;
             this.Txt_TCKimlikNo.Location = new System.Drawing.Point(173, 248);
             this.Txt_TCKimlikNo.Name = "Txt_TCKimlikNo";
             this.Txt_TCKimlikNo.Size = new System.Drawing.Size(135, 35);
@@ -140,6 +151,7 @@ namespace Yazılım_Yapımı_3
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Maroon;
             this.label6.Location = new System.Drawing.Point(31, 253);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(136, 30);
@@ -148,6 +160,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Txt_Adres
             // 
+            this.Txt_Adres.ForeColor = System.Drawing.Color.Maroon;
             this.Txt_Adres.Location = new System.Drawing.Point(173, 371);
             this.Txt_Adres.Name = "Txt_Adres";
             this.Txt_Adres.Size = new System.Drawing.Size(135, 35);
@@ -156,6 +169,7 @@ namespace Yazılım_Yapımı_3
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Maroon;
             this.label7.Location = new System.Drawing.Point(96, 376);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(71, 30);
@@ -164,6 +178,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Txt_Email
             // 
+            this.Txt_Email.ForeColor = System.Drawing.Color.Maroon;
             this.Txt_Email.Location = new System.Drawing.Point(173, 330);
             this.Txt_Email.Name = "Txt_Email";
             this.Txt_Email.Size = new System.Drawing.Size(135, 35);
@@ -172,6 +187,7 @@ namespace Yazılım_Yapımı_3
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Maroon;
             this.label8.Location = new System.Drawing.Point(99, 335);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(68, 30);
@@ -182,6 +198,7 @@ namespace Yazılım_Yapımı_3
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.Maroon;
             this.label9.Location = new System.Drawing.Point(123, 9);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(165, 40);
@@ -190,6 +207,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Btn_Kaydol
             // 
+            this.Btn_Kaydol.ForeColor = System.Drawing.Color.Maroon;
             this.Btn_Kaydol.Location = new System.Drawing.Point(173, 412);
             this.Btn_Kaydol.Name = "Btn_Kaydol";
             this.Btn_Kaydol.Size = new System.Drawing.Size(104, 41);
@@ -200,6 +218,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Btn_Geri
             // 
+            this.Btn_Geri.ForeColor = System.Drawing.Color.Maroon;
             this.Btn_Geri.Location = new System.Drawing.Point(283, 412);
             this.Btn_Geri.Name = "Btn_Geri";
             this.Btn_Geri.Size = new System.Drawing.Size(104, 41);
@@ -233,6 +252,7 @@ namespace Yazılım_Yapımı_3
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "KullaniciKayit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KullaniciKayit";
             this.Load += new System.EventHandler(this.KullaniciKayit_Load);
             this.ResumeLayout(false);

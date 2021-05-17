@@ -20,15 +20,15 @@ namespace Yazılım_Yapımı_3
 
 
         public List<Urun> Urunler = new List<Urun>();
+        public List<Urun> AlinanUrunler = new List<Urun>();
 
         public Urun OnayBekleyenUrun = new Urun();
         public int OnayBekleyenBakiye { get; set; }
-
         public override string ToString()
         {
             if(OnayTuru)
             {
-                return KullaniciAdi + " Kullanıcısı " + OnayBekleyenUrun.KG.ToString() + " Kg " + OnayBekleyenUrun.Ad;
+                return KullaniciAdi + " Kullanıcısı " + OnayBekleyenUrun.KG.ToString() + " Kg " + OnayBekleyenUrun.Ad+" "+OnayBekleyenUrun.Fiyat.ToString()+"₺";
             }
             else
             {

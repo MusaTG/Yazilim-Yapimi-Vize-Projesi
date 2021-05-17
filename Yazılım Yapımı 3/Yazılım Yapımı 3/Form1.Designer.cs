@@ -42,6 +42,7 @@ namespace Yazılım_Yapımı_3
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
             this.label1.Location = new System.Drawing.Point(30, 99);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 30);
@@ -50,6 +51,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Txt_KullaniciAdi
             // 
+            this.Txt_KullaniciAdi.ForeColor = System.Drawing.Color.Maroon;
             this.Txt_KullaniciAdi.Location = new System.Drawing.Point(168, 94);
             this.Txt_KullaniciAdi.Name = "Txt_KullaniciAdi";
             this.Txt_KullaniciAdi.Size = new System.Drawing.Size(132, 35);
@@ -57,6 +59,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Txt_Sifre
             // 
+            this.Txt_Sifre.ForeColor = System.Drawing.Color.Maroon;
             this.Txt_Sifre.Location = new System.Drawing.Point(168, 135);
             this.Txt_Sifre.Name = "Txt_Sifre";
             this.Txt_Sifre.Size = new System.Drawing.Size(132, 35);
@@ -65,6 +68,7 @@ namespace Yazılım_Yapımı_3
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Maroon;
             this.label2.Location = new System.Drawing.Point(103, 140);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 30);
@@ -75,6 +79,7 @@ namespace Yazılım_Yapımı_3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Maroon;
             this.label3.Location = new System.Drawing.Point(91, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(158, 40);
@@ -83,6 +88,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Btn_Giris
             // 
+            this.Btn_Giris.ForeColor = System.Drawing.Color.Maroon;
             this.Btn_Giris.Location = new System.Drawing.Point(168, 206);
             this.Btn_Giris.Name = "Btn_Giris";
             this.Btn_Giris.Size = new System.Drawing.Size(132, 39);
@@ -95,6 +101,7 @@ namespace Yazılım_Yapımı_3
             // 
             this.CB_SifreGoster.AutoSize = true;
             this.CB_SifreGoster.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CB_SifreGoster.ForeColor = System.Drawing.Color.Maroon;
             this.CB_SifreGoster.Location = new System.Drawing.Point(168, 176);
             this.CB_SifreGoster.Name = "CB_SifreGoster";
             this.CB_SifreGoster.Size = new System.Drawing.Size(116, 24);
@@ -107,6 +114,7 @@ namespace Yazılım_Yapımı_3
             // 
             this.LBL_Kaydol.AutoSize = true;
             this.LBL_Kaydol.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LBL_Kaydol.ForeColor = System.Drawing.Color.Maroon;
             this.LBL_Kaydol.Location = new System.Drawing.Point(203, 248);
             this.LBL_Kaydol.Name = "LBL_Kaydol";
             this.LBL_Kaydol.Size = new System.Drawing.Size(57, 21);
@@ -129,6 +137,7 @@ namespace Yazılım_Yapımı_3
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
