@@ -8,8 +8,8 @@ namespace Yazılım_Yapımı_3
     {
         public string Ad { get; set; }
         public int KG { get; set; }
-
-        
+        public int UrunKod { get; set; }
+        public int Fiyat { get; set; }
 
     }
 }

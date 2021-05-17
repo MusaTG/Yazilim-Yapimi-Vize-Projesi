@@ -50,6 +50,7 @@ namespace Yazılım_Yapımı_3
             this.panel1.Controls.Add(this.Btn_UrunOnayla);
             this.panel1.Controls.Add(this.LB_Urun);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.ForeColor = System.Drawing.Color.Maroon;
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(395, 387);
@@ -57,6 +58,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Btn_UrunReddet
             // 
+            this.Btn_UrunReddet.ForeColor = System.Drawing.Color.MidnightBlue;
             this.Btn_UrunReddet.Location = new System.Drawing.Point(287, 286);
             this.Btn_UrunReddet.Name = "Btn_UrunReddet";
             this.Btn_UrunReddet.Size = new System.Drawing.Size(95, 41);
@@ -67,6 +69,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Btn_UrunOnayla
             // 
+            this.Btn_UrunOnayla.ForeColor = System.Drawing.Color.MidnightBlue;
             this.Btn_UrunOnayla.Location = new System.Drawing.Point(14, 286);
             this.Btn_UrunOnayla.Name = "Btn_UrunOnayla";
             this.Btn_UrunOnayla.Size = new System.Drawing.Size(95, 41);
@@ -77,6 +80,7 @@ namespace Yazılım_Yapımı_3
             // 
             // LB_Urun
             // 
+            this.LB_Urun.ForeColor = System.Drawing.Color.MidnightBlue;
             this.LB_Urun.FormattingEnabled = true;
             this.LB_Urun.ItemHeight = 30;
             this.LB_Urun.Location = new System.Drawing.Point(14, 66);
@@ -87,6 +91,7 @@ namespace Yazılım_Yapımı_3
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label1.Location = new System.Drawing.Point(14, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 30);
@@ -100,6 +105,7 @@ namespace Yazılım_Yapımı_3
             this.panel2.Controls.Add(this.LB_Bakiye);
             this.panel2.Controls.Add(this.Btn_BakiyeOnayla);
             this.panel2.Controls.Add(this.label2);
+            this.panel2.ForeColor = System.Drawing.Color.Maroon;
             this.panel2.Location = new System.Drawing.Point(417, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(395, 387);
@@ -107,6 +113,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Btn_BakiyeReddet
             // 
+            this.Btn_BakiyeReddet.ForeColor = System.Drawing.Color.DarkViolet;
             this.Btn_BakiyeReddet.Location = new System.Drawing.Point(285, 286);
             this.Btn_BakiyeReddet.Name = "Btn_BakiyeReddet";
             this.Btn_BakiyeReddet.Size = new System.Drawing.Size(95, 41);
@@ -117,6 +124,7 @@ namespace Yazılım_Yapımı_3
             // 
             // LB_Bakiye
             // 
+            this.LB_Bakiye.ForeColor = System.Drawing.Color.DarkViolet;
             this.LB_Bakiye.FormattingEnabled = true;
             this.LB_Bakiye.ItemHeight = 30;
             this.LB_Bakiye.Location = new System.Drawing.Point(12, 66);
@@ -126,6 +134,7 @@ namespace Yazılım_Yapımı_3
             // 
             // Btn_BakiyeOnayla
             // 
+            this.Btn_BakiyeOnayla.ForeColor = System.Drawing.Color.DarkViolet;
             this.Btn_BakiyeOnayla.Location = new System.Drawing.Point(12, 286);
             this.Btn_BakiyeOnayla.Name = "Btn_BakiyeOnayla";
             this.Btn_BakiyeOnayla.Size = new System.Drawing.Size(95, 41);
@@ -137,6 +146,7 @@ namespace Yazılım_Yapımı_3
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.DarkViolet;
             this.label2.Location = new System.Drawing.Point(12, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 30);
@@ -152,6 +162,7 @@ namespace Yazılım_Yapımı_3
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "AdminGirisi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminGirisi";
             this.Load += new System.EventHandler(this.AdminGirisi_Load);
             this.panel1.ResumeLayout(false);
