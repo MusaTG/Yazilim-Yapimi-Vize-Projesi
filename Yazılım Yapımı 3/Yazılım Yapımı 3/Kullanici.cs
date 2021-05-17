@@ -16,7 +16,7 @@ namespace Yazılım_Yapımı_3
         public string Adres { get; set; }
         public int Bakiye { get; set; }
 
-        public bool OnayTuru { get; set; } //true ise urun yazdır, false ise bakiye yazıdr
+        public bool OnayTuru { get; set; } //true ise urun yazdır, false ise bakiye yazdır
 
 
         public List<Urun> Urunler = new List<Urun>();
@@ -32,7 +32,7 @@ namespace Yazılım_Yapımı_3
             }
             else
             {
-                return KullaniciAdi + " Kullanıcısı " + OnayBekleyenBakiye.ToString() + " TL";
+                return KullaniciAdi + " Kullanıcısı " + OnayBekleyenBakiye.ToString() + " ₺";
             }
         }
 

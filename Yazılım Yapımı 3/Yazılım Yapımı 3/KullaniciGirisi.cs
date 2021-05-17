@@ -30,9 +30,16 @@ namespace Yazılım_Yapımı_3
             listSiparis.Items.Clear();
             listUrunler.Items.Clear();
             foreach (Urun urun in kullanici.Urunler)
-                listUrunler.Items.Add(urun.Ad + " KG: " + urun.KG.ToString() + " Fiyat: " + urun.Fiyat.ToString());
+            {
+                if(urun.KG !=0)
+                    listUrunler.Items.Add(urun.Ad + " KG: " + urun.KG.ToString() + " Fiyat: " + urun.Fiyat.ToString());
+            }
+                
             foreach (Urun urun in kullanici.AlinanUrunler)
+            {
                 listSiparis.Items.Add(urun.Ad + " KG: " + urun.KG.ToString() + " Fiyat: " + urun.Fiyat.ToString());
+            }
+                
         }
         private void Btn_BakiyeOnay_Click(object sender, EventArgs e)
         {
@@ -50,6 +57,13 @@ namespace Yazılım_Yapımı_3
 
         private void Btn_UrunOnay_Click(object sender, EventArgs e)
         {
+            if(ChckB_UrunTipii.Text == "" || Txt_Kg.Text == "" || Txt_Fiyat.Text == "" || Txt_Kod.Text == "" 
+               || Convert.ToInt32(Txt_Kg.Text) == 0 || Convert.ToInt32(Txt_Fiyat.Text) == 0 || Convert.ToInt32(Txt_Kod.Text) == 0)
+            {
+                MessageBox.Show("Lütfen Geçerli Değerler Giriniz!");
+                return;
+            }
+
             if (kullanici.OnayBekleyenUrun.KG != 0)
             {
                 MessageBox.Show("Lütfen Gönderdiğiniz Ürünün Onay İşleminin Sonuçlanmasını Bekleyiniz!");

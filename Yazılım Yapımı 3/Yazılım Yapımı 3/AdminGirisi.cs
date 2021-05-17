@@ -92,7 +92,10 @@ namespace Yazılım_Yapımı_3
             {
                 if(kullanici.KullaniciAdi == x.KullaniciAdi)
                 {
-                    x.OnayBekleyenUrun = null;
+                    x.OnayBekleyenUrun.Ad = "";
+                    x.OnayBekleyenUrun.KG = 0;
+                    x.OnayBekleyenUrun.UrunKod = 0;
+                    x.OnayBekleyenUrun.Fiyat = 0;
                     LB_Urun.Items.Remove(LB_Urun.SelectedItem);
                     MessageBox.Show("Ürün Reddedildi!");
                     break;
