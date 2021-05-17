@@ -1,0 +1,18 @@
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\Yazılım Yapımı 3.exe
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\Yazılım Yapımı 3.deps.json
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\Yazılım Yapımı 3.runtimeconfig.json
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\Yazılım Yapımı 3.runtimeconfig.dev.json
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\Yazılım Yapımı 3.dll
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\Yazılım Yapımı 3.pdb
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım Yapımı 3.csprojAssemblyReference.cache
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım_Yapımı_3.AdminGirisi.resources
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım_Yapımı_3.Form1.resources
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım_Yapımı_3.KullaniciGirisi.resources
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım_Yapımı_3.KullaniciKayit.resources
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım Yapımı 3.csproj.GenerateResource.cache
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım Yapımı 3.AssemblyInfoInputs.cache
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım Yapımı 3.AssemblyInfo.cs
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım Yapımı 3.csproj.CoreCompileInputs.cache
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım Yapımı 3.dll
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım Yapımı 3.pdb
+C:\Users\yusuf\source\repos\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım Yapımı 3.genruntimeconfig.cache
