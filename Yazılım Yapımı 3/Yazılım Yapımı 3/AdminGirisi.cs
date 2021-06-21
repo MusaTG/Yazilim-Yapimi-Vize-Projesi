@@ -48,8 +48,6 @@ namespace Yazılım_Yapımı_3
             Lbl_Euro.Text = euro.ToString();
             Lbl_Sterlin.Text = sterlin.ToString();
 
-
-
             foreach (Kullanici x in kullanicilar)
             {
                 if(x.OnayBekleyenBakiye !=0)

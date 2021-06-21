@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ganss.Excel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,11 +21,13 @@ namespace Yazılım_Yapımı_3
         public List<Kullanici> urunIcin = new List<Kullanici>();
         public AdminGirisi adminEkrani = new AdminGirisi();
         public List<Muhasebe> muhasebes = new List<Muhasebe>();
+        public List<Urun> excelList;
 
         double dolar, euro, sterlin;
 
         private void KullaniciGirisi_Load(object sender, EventArgs e)
         {
+            AlinmakIstenenUrun();
             cmbUrunleriListele();
 
             kullanici.Bakiye = Math.Round(kullanici.Bakiye, 2);
@@ -64,6 +67,7 @@ namespace Yazılım_Yapımı_3
         {
             listSiparis.Items.Clear();
             listUrunler.Items.Clear();
+            listSatis.Items.Clear();
             foreach (Urun urun in kullanici.Urunler)
             {
                 if(urun.KG !=0)
@@ -73,8 +77,13 @@ namespace Yazılım_Yapımı_3
             foreach (Urun urun in kullanici.AlinanUrunler)
             {
                 listSiparis.Items.Add(urun.Ad + " KG: " + urun.KG.ToString() + " Fiyat: " + urun.Fiyat.ToString());
+                excelList.Add(new Urun() { Ad = urun.Ad, KG = urun.KG, Fiyat = urun.Fiyat, AlisTarih = urun.AlisTarih });
             }
-                
+            foreach (Urun satis in kullanici.SatilanUrunler)
+            {
+                listSatis.Items.Add(satis.Ad + " KG: " + satis.KG.ToString() + " Fiyat: " + satis.Fiyat.ToString() + " Tarih: " + satis.AlisTarih.ToString("d"));
+                excelList.Add(new Urun() { Ad = satis.Ad, KG = satis.KG, Fiyat = satis.Fiyat, AlisTarih = satis.AlisTarih });
+            }
         }
         private void Btn_BakiyeOnay_Click(object sender, EventArgs e)
         {
@@ -169,6 +178,7 @@ namespace Yazılım_Yapımı_3
         }
         private void cmbUrunleriListele()
         {
+            ChckB_UrunAdi.Items.Clear();
             foreach (var uKullanici in urunIcin)
             {
                 if (!(uKullanici.KullaniciAdi == kullanici.KullaniciAdi))
@@ -229,6 +239,18 @@ namespace Yazılım_Yapımı_3
             kullanici.AlinmayiBekleyenUrun.KG = Convert.ToInt32(txtIstenenMiktari.Text);
             MessageBox.Show("Başarıyla Sisteme Eklendi...");
             AlinmakIstenenUrun();
+        }
+
+        private void Btn_ExcelAktar_Click(object sender, EventArgs e)
+        {
+            UrunListele();
+            foreach (var urun in excelList.ToArray())
+            {
+                if (DateTime.Compare(urun.AlisTarih, this.date_Baslangic.Value.Date) != 1 || DateTime.Compare(urun.AlisTarih, this.date_Bitis.Value.Date) != -1)
+                    excelList.Remove(urun);
+            }
+            ExcelMapper mapper = new ExcelMapper();
+            mapper.Save(@"urun.xlsx", excelList, "Sheetname", true);
         }
 
         private void enDusukFiyat()
