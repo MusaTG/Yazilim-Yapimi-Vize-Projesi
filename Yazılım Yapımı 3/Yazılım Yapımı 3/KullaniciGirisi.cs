@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace Yazılım_Yapımı_3
 {
@@ -19,11 +20,44 @@ namespace Yazılım_Yapımı_3
         public List<Kullanici> urunIcin = new List<Kullanici>();
         public AdminGirisi adminEkrani = new AdminGirisi();
 
+        double dolar, euro, sterlin;
+
         private void KullaniciGirisi_Load(object sender, EventArgs e)
         {
             cmbUrunleriListele();
+
+            kullanici.Bakiye = Math.Round(kullanici.Bakiye, 2);
+
             LBL_Bakiye.Text = kullanici.Bakiye.ToString();
             UrunListele();
+
+            if(kullanici.AlinmayiBekleyenUrun.Ad != null)
+            {
+                timer1.Enabled = true;
+            }
+
+            //Döviz Kurları
+
+            string bugun = "http://www.tcmb.gov.tr/kurlar/today.xml";
+            var xmldoc = new XmlDocument();
+
+            xmldoc.Load(bugun);
+
+            string USD = xmldoc.SelectSingleNode("//Currency [@Kod = 'USD']/BanknoteSelling").InnerXml;
+            string EUR = xmldoc.SelectSingleNode("//Currency [@Kod = 'EUR']/BanknoteSelling").InnerXml;
+            string GBP = xmldoc.SelectSingleNode("//Currency [@Kod = 'GBP']/BanknoteSelling").InnerXml;
+
+            dolar = Convert.ToDouble(USD);
+            euro = Convert.ToDouble(EUR);
+            sterlin = Convert.ToDouble(GBP);
+
+            dolar = Math.Round(dolar, 2);
+            euro = Math.Round(euro, 2);
+            sterlin = Math.Round(sterlin, 2);
+
+            Lbl_Dolar.Text = dolar.ToString();
+            Lbl_Euro.Text = euro.ToString();
+            Lbl_Sterlin.Text = sterlin.ToString();
         }
         private void UrunListele()
         {
@@ -43,14 +77,63 @@ namespace Yazılım_Yapımı_3
         }
         private void Btn_BakiyeOnay_Click(object sender, EventArgs e)
         {
-            if (kullanici.OnayBekleyenBakiye != 0)
+            switch(CB_ParaBirimi.Text)
             {
-                MessageBox.Show("Lütfen Gönderdiğiniz Bakiyenin Onay İşleminin Sonuçlanmasını Bekleyiniz!");
-            }
-            else
-            {
-                kullanici.OnayBekleyenBakiye = Convert.ToInt32(Txt_TL.Text);
-                MessageBox.Show("Onaya Gönderildi!");
+                case "Türk Lirası":
+                    if(kullanici.OnayBekleyenBakiye != 0)
+                    {
+                        MessageBox.Show("Lütfen Gönderdiğiniz Bakiyenin Onay İşleminin Sonuçlanmasını Bekleyiniz!");
+                    }
+                    else
+                    {
+                        kullanici.OnayBekleyenBakiye = Convert.ToDouble(Txt_ParaMiktari.Text);
+                        kullanici.OnayBekleyenParaBirimi = "Türk Lirası";
+                        MessageBox.Show("Onaya Gönderildi!");
+                    }
+                    break;
+
+                case "Amerikan Doları":
+                    if(kullanici.OnayBekleyenBakiye !=0)
+                    {
+                        MessageBox.Show("Lütfen Gönderdiğiniz Bakiyenin Onay İşleminin Sonuçlanmasını Bekleyiniz!");
+                    }
+                    else
+                    {
+                        kullanici.OnayBekleyenBakiye = Convert.ToDouble(Txt_ParaMiktari.Text);
+                        kullanici.OnayBekleyenParaBirimi = "Amerikan Doları";
+                        MessageBox.Show("Onaya Gönderildi!");
+                    }
+                    break;
+
+                case "Euro":
+                    if (kullanici.OnayBekleyenBakiye != 0)
+                    {
+                        MessageBox.Show("Lütfen Gönderdiğiniz Bakiyenin Onay İşleminin Sonuçlanmasını Bekleyiniz!");
+                    }
+                    else
+                    {
+                        kullanici.OnayBekleyenBakiye = Convert.ToDouble(Txt_ParaMiktari.Text);
+                        kullanici.OnayBekleyenParaBirimi = "Euro";
+                        MessageBox.Show("Onaya Gönderildi!");
+                    }
+                    break;
+                case "Sterlin":
+                    if (kullanici.OnayBekleyenBakiye != 0)
+                    {
+                        MessageBox.Show("Lütfen Gönderdiğiniz Bakiyenin Onay İşleminin Sonuçlanmasını Bekleyiniz!");
+                    }
+                    else
+                    {
+                        kullanici.OnayBekleyenBakiye = Convert.ToDouble(Txt_ParaMiktari.Text);
+                        kullanici.OnayBekleyenParaBirimi = "Sterlin";
+                        MessageBox.Show("Onaya Gönderildi!");
+                    }
+                    break;
+
+                default:
+                    MessageBox.Show("Lütfen Bir Para Birimi Seçiniz!");
+                    break;
+
             }
 
         }

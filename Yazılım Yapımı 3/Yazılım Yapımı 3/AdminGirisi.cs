@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace Yazılım_Yapımı_3
 {
@@ -19,9 +20,37 @@ namespace Yazılım_Yapımı_3
         public List<Kullanici> kullanicilar = new List<Kullanici>();
         Kullanici kullanici = new Kullanici();
 
+        double dolar, euro, sterlin;
+
         private void AdminGirisi_Load(object sender, EventArgs e)
         {
-            foreach(Kullanici x in kullanicilar)
+
+            //Döviz Kurları
+
+            string bugun = "http://www.tcmb.gov.tr/kurlar/today.xml";
+            var xmldoc = new XmlDocument();
+
+            xmldoc.Load(bugun);
+
+            string USD = xmldoc.SelectSingleNode("//Currency [@Kod = 'USD']/BanknoteSelling").InnerXml;
+            string EUR = xmldoc.SelectSingleNode("//Currency [@Kod = 'EUR']/BanknoteSelling").InnerXml;
+            string GBP = xmldoc.SelectSingleNode("//Currency [@Kod = 'GBP']/BanknoteSelling").InnerXml;
+
+            dolar = Convert.ToDouble(USD);
+            euro = Convert.ToDouble(EUR);
+            sterlin = Convert.ToDouble(GBP);
+
+            dolar = Math.Round(dolar, 2);
+            euro = Math.Round(euro, 2);
+            sterlin = Math.Round(sterlin, 2);
+
+            Lbl_Dolar.Text = dolar.ToString();
+            Lbl_Euro.Text = euro.ToString();
+            Lbl_Sterlin.Text = sterlin.ToString();
+
+
+
+            foreach (Kullanici x in kullanicilar)
             {
                 if(x.OnayBekleyenBakiye !=0)
                 {
@@ -73,9 +102,23 @@ namespace Yazılım_Yapımı_3
 
             foreach(Kullanici x in kullanicilar)
             {
-                if (kullanici.KullaniciAdi == x.KullaniciAdi)
+                if(kullanici.KullaniciAdi == x.KullaniciAdi)
                 {
-                    x.Bakiye = x.Bakiye + x.OnayBekleyenBakiye;
+                    switch (x.OnayBekleyenParaBirimi)
+                    {
+                        case "Türk Lirası":
+                            x.Bakiye += x.OnayBekleyenBakiye;
+                            break;
+                        case "Amerikan Doları":
+                            x.Bakiye += x.OnayBekleyenBakiye * dolar;
+                            break;
+                        case "Euro":
+                            x.Bakiye += x.OnayBekleyenBakiye * euro;
+                            break;
+                        case "Sterlin":
+                            x.Bakiye += x.OnayBekleyenBakiye * sterlin;
+                            break;
+                    }
                     x.OnayBekleyenBakiye = 0;
                     LB_Bakiye.Items.Remove(LB_Bakiye.SelectedItem);
                     MessageBox.Show("Bakiye Onaylandı!");

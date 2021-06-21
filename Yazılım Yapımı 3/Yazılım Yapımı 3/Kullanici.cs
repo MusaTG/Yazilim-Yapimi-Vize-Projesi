@@ -14,7 +14,7 @@ namespace Yazılım_Yapımı_3
         public string Telefon { get; set; }
         public string Email { get; set; }
         public string Adres { get; set; }
-        public int Bakiye { get; set; }
+        public double Bakiye { get; set; }
 
         public bool OnayTuru { get; set; } //true ise urun yazdır, false ise bakiye yazdır
 
@@ -23,7 +23,10 @@ namespace Yazılım_Yapımı_3
         public List<Urun> AlinanUrunler = new List<Urun>();
 
         public Urun OnayBekleyenUrun = new Urun();
-        public int OnayBekleyenBakiye { get; set; }
+        public Urun AlinmayiBekleyenUrun = new Urun();
+        
+        public double OnayBekleyenBakiye { get; set; }
+        public string OnayBekleyenParaBirimi { get; set; }
         public override string ToString()
         {
             if(OnayTuru)
@@ -32,7 +35,23 @@ namespace Yazılım_Yapımı_3
             }
             else
             {
-                return KullaniciAdi + " Kullanıcısı " + OnayBekleyenBakiye.ToString() + " ₺";
+                string mesaj = "";
+                switch(OnayBekleyenParaBirimi)
+                {
+                    case "Türk Lirası":
+                        mesaj = KullaniciAdi + " Kullanıcısı " + OnayBekleyenBakiye.ToString() + " ₺";
+                        break;
+                    case "Amerikan Doları":
+                        mesaj = KullaniciAdi + " Kullanıcısı " + OnayBekleyenBakiye.ToString() + " $";
+                        break;
+                    case "Euro":
+                        mesaj = KullaniciAdi + " Kullanıcısı " + OnayBekleyenBakiye.ToString() + " €";
+                        break;
+                    case "Sterlin":
+                        mesaj = KullaniciAdi + " Kullanıcısı " + OnayBekleyenBakiye.ToString() + " £";
+                        break;
+                }
+                return mesaj;
             }
         }
 

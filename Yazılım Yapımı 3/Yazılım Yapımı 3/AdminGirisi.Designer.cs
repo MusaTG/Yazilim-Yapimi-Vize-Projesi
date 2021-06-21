@@ -39,6 +39,13 @@ namespace Yazılım_Yapımı_3
             this.LB_Bakiye = new System.Windows.Forms.ListBox();
             this.Btn_BakiyeOnayla = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.Lbl_Sterlin = new System.Windows.Forms.Label();
+            this.Lbl_Euro = new System.Windows.Forms.Label();
+            this.Lbl_Dolar = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -153,11 +160,94 @@ namespace Yazılım_Yapımı_3
             this.label2.TabIndex = 1;
             this.label2.Text = "Bakiye Onay";
             // 
+            // Lbl_Sterlin
+            // 
+            this.Lbl_Sterlin.AutoSize = true;
+            this.Lbl_Sterlin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Lbl_Sterlin.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.Lbl_Sterlin.Location = new System.Drawing.Point(207, 478);
+            this.Lbl_Sterlin.Name = "Lbl_Sterlin";
+            this.Lbl_Sterlin.Size = new System.Drawing.Size(54, 21);
+            this.Lbl_Sterlin.TabIndex = 19;
+            this.Lbl_Sterlin.Text = "Sterlin";
+            // 
+            // Lbl_Euro
+            // 
+            this.Lbl_Euro.AutoSize = true;
+            this.Lbl_Euro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Lbl_Euro.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.Lbl_Euro.Location = new System.Drawing.Point(113, 478);
+            this.Lbl_Euro.Name = "Lbl_Euro";
+            this.Lbl_Euro.Size = new System.Drawing.Size(42, 21);
+            this.Lbl_Euro.TabIndex = 18;
+            this.Lbl_Euro.Text = "Euro";
+            // 
+            // Lbl_Dolar
+            // 
+            this.Lbl_Dolar.AutoSize = true;
+            this.Lbl_Dolar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Lbl_Dolar.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.Lbl_Dolar.Location = new System.Drawing.Point(12, 478);
+            this.Lbl_Dolar.Name = "Lbl_Dolar";
+            this.Lbl_Dolar.Size = new System.Drawing.Size(48, 21);
+            this.Lbl_Dolar.TabIndex = 17;
+            this.Lbl_Dolar.Text = "Dolar";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label19.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.label19.Location = new System.Drawing.Point(207, 457);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(54, 21);
+            this.label19.TabIndex = 16;
+            this.label19.Text = "Sterlin";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label18.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.label18.Location = new System.Drawing.Point(113, 457);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(42, 21);
+            this.label18.TabIndex = 15;
+            this.label18.Text = "Euro";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label17.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.label17.Location = new System.Drawing.Point(12, 457);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(48, 21);
+            this.label17.TabIndex = 14;
+            this.label17.Text = "Dolar";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.label16.Location = new System.Drawing.Point(12, 416);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(130, 30);
+            this.label16.TabIndex = 13;
+            this.label16.Text = "Döviz Kurları";
+            // 
             // AdminGirisi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 420);
+            this.ClientSize = new System.Drawing.Size(824, 531);
+            this.Controls.Add(this.Lbl_Sterlin);
+            this.Controls.Add(this.Lbl_Euro);
+            this.Controls.Add(this.Lbl_Dolar);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -170,6 +260,7 @@ namespace Yazılım_Yapımı_3
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -185,5 +276,12 @@ namespace Yazılım_Yapımı_3
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.ListBox LB_Urun;
         public System.Windows.Forms.ListBox LB_Bakiye;
+        private System.Windows.Forms.Label Lbl_Sterlin;
+        private System.Windows.Forms.Label Lbl_Euro;
+        private System.Windows.Forms.Label Lbl_Dolar;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
     }
 }

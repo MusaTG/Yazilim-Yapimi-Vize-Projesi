@@ -29,9 +29,19 @@ namespace Yazılım_Yapımı_3
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Lbl_Sterlin = new System.Windows.Forms.Label();
+            this.Lbl_Euro = new System.Windows.Forms.Label();
+            this.Lbl_Dolar = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.CB_ParaBirimi = new System.Windows.Forms.ComboBox();
             this.Btn_BakiyeOnay = new System.Windows.Forms.Button();
-            this.Txt_TL = new System.Windows.Forms.TextBox();
+            this.Txt_ParaMiktari = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -61,6 +71,7 @@ namespace Yazılım_Yapımı_3
             this.label13 = new System.Windows.Forms.Label();
             this.listSiparis = new System.Windows.Forms.ListBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -70,8 +81,17 @@ namespace Yazılım_Yapımı_3
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.panel1.Controls.Add(this.Lbl_Sterlin);
+            this.panel1.Controls.Add(this.Lbl_Euro);
+            this.panel1.Controls.Add(this.Lbl_Dolar);
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.CB_ParaBirimi);
             this.panel1.Controls.Add(this.Btn_BakiyeOnay);
-            this.panel1.Controls.Add(this.Txt_TL);
+            this.panel1.Controls.Add(this.Txt_ParaMiktari);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(380, 355);
@@ -79,10 +99,109 @@ namespace Yazılım_Yapımı_3
             this.panel1.Size = new System.Drawing.Size(362, 337);
             this.panel1.TabIndex = 0;
             // 
+            // Lbl_Sterlin
+            // 
+            this.Lbl_Sterlin.AutoSize = true;
+            this.Lbl_Sterlin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Lbl_Sterlin.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.Lbl_Sterlin.Location = new System.Drawing.Point(216, 292);
+            this.Lbl_Sterlin.Name = "Lbl_Sterlin";
+            this.Lbl_Sterlin.Size = new System.Drawing.Size(54, 21);
+            this.Lbl_Sterlin.TabIndex = 12;
+            this.Lbl_Sterlin.Text = "Sterlin";
+            // 
+            // Lbl_Euro
+            // 
+            this.Lbl_Euro.AutoSize = true;
+            this.Lbl_Euro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Lbl_Euro.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.Lbl_Euro.Location = new System.Drawing.Point(122, 292);
+            this.Lbl_Euro.Name = "Lbl_Euro";
+            this.Lbl_Euro.Size = new System.Drawing.Size(42, 21);
+            this.Lbl_Euro.TabIndex = 11;
+            this.Lbl_Euro.Text = "Euro";
+            // 
+            // Lbl_Dolar
+            // 
+            this.Lbl_Dolar.AutoSize = true;
+            this.Lbl_Dolar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Lbl_Dolar.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.Lbl_Dolar.Location = new System.Drawing.Point(21, 292);
+            this.Lbl_Dolar.Name = "Lbl_Dolar";
+            this.Lbl_Dolar.Size = new System.Drawing.Size(48, 21);
+            this.Lbl_Dolar.TabIndex = 10;
+            this.Lbl_Dolar.Text = "Dolar";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label19.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.label19.Location = new System.Drawing.Point(216, 271);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(54, 21);
+            this.label19.TabIndex = 9;
+            this.label19.Text = "Sterlin";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label18.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.label18.Location = new System.Drawing.Point(122, 271);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(42, 21);
+            this.label18.TabIndex = 8;
+            this.label18.Text = "Euro";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label17.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.label17.Location = new System.Drawing.Point(21, 271);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(48, 21);
+            this.label17.TabIndex = 7;
+            this.label17.Text = "Dolar";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.label16.Location = new System.Drawing.Point(21, 230);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(130, 30);
+            this.label16.TabIndex = 6;
+            this.label16.Text = "Döviz Kurları";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.label14.Location = new System.Drawing.Point(21, 85);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(122, 30);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "Para Birimi: ";
+            // 
+            // CB_ParaBirimi
+            // 
+            this.CB_ParaBirimi.FormattingEnabled = true;
+            this.CB_ParaBirimi.Items.AddRange(new object[] {
+            "Türk Lirası",
+            "Amerikan Doları",
+            "Euro",
+            "Sterlin"});
+            this.CB_ParaBirimi.Location = new System.Drawing.Point(149, 82);
+            this.CB_ParaBirimi.Name = "CB_ParaBirimi";
+            this.CB_ParaBirimi.Size = new System.Drawing.Size(162, 38);
+            this.CB_ParaBirimi.TabIndex = 4;
+            // 
             // Btn_BakiyeOnay
             // 
             this.Btn_BakiyeOnay.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.Btn_BakiyeOnay.Location = new System.Drawing.Point(149, 133);
+            this.Btn_BakiyeOnay.Location = new System.Drawing.Point(149, 167);
             this.Btn_BakiyeOnay.Name = "Btn_BakiyeOnay";
             this.Btn_BakiyeOnay.Size = new System.Drawing.Size(162, 38);
             this.Btn_BakiyeOnay.TabIndex = 3;
@@ -90,23 +209,23 @@ namespace Yazılım_Yapımı_3
             this.Btn_BakiyeOnay.UseVisualStyleBackColor = true;
             this.Btn_BakiyeOnay.Click += new System.EventHandler(this.Btn_BakiyeOnay_Click);
             // 
-            // Txt_TL
+            // Txt_ParaMiktari
             // 
-            this.Txt_TL.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.Txt_TL.Location = new System.Drawing.Point(149, 82);
-            this.Txt_TL.Name = "Txt_TL";
-            this.Txt_TL.Size = new System.Drawing.Size(162, 35);
-            this.Txt_TL.TabIndex = 2;
+            this.Txt_ParaMiktari.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.Txt_ParaMiktari.Location = new System.Drawing.Point(149, 126);
+            this.Txt_ParaMiktari.Name = "Txt_ParaMiktari";
+            this.Txt_ParaMiktari.Size = new System.Drawing.Size(162, 35);
+            this.Txt_ParaMiktari.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.label2.Location = new System.Drawing.Point(100, 87);
+            this.label2.Location = new System.Drawing.Point(51, 129);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 30);
+            this.label2.Size = new System.Drawing.Size(77, 30);
             this.label2.TabIndex = 1;
-            this.label2.Text = "TL:";
+            this.label2.Text = "Miktar:";
             // 
             // label1
             // 
@@ -431,7 +550,7 @@ namespace Yazılım_Yapımı_3
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button Btn_BakiyeOnay;
-        private System.Windows.Forms.TextBox Txt_TL;
+        private System.Windows.Forms.TextBox Txt_ParaMiktari;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
@@ -462,5 +581,15 @@ namespace Yazılım_Yapımı_3
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ListBox listSiparis;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label Lbl_Sterlin;
+        private System.Windows.Forms.Label Lbl_Euro;
+        private System.Windows.Forms.Label Lbl_Dolar;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox CB_ParaBirimi;
+        private System.Windows.Forms.Timer timer1;
     }
 }
