@@ -29,6 +29,7 @@ namespace Yazılım_Yapımı_3
         {
             AlinmakIstenenUrun();
             cmbUrunleriListele();
+            cmbMuhasebeListele();
 
             kullanici.Bakiye = Math.Round(kullanici.Bakiye, 2);
 
@@ -68,6 +69,7 @@ namespace Yazılım_Yapımı_3
             listSiparis.Items.Clear();
             listUrunler.Items.Clear();
             listSatis.Items.Clear();
+            excelList = new List<Urun>();
             foreach (Urun urun in kullanici.Urunler)
             {
                 if(urun.KG !=0)
@@ -76,7 +78,7 @@ namespace Yazılım_Yapımı_3
                 
             foreach (Urun urun in kullanici.AlinanUrunler)
             {
-                listSiparis.Items.Add(urun.Ad + " KG: " + urun.KG.ToString() + " Fiyat: " + urun.Fiyat.ToString());
+                listSiparis.Items.Add(urun.Ad + " KG: " + urun.KG.ToString() + " Fiyat: " + urun.Fiyat.ToString() + " Tarih: " + urun.AlisTarih.ToString("d"));
                 excelList.Add(new Urun() { Ad = urun.Ad, KG = urun.KG, Fiyat = urun.Fiyat, AlisTarih = urun.AlisTarih });
             }
             foreach (Urun satis in kullanici.SatilanUrunler)
@@ -169,12 +171,15 @@ namespace Yazılım_Yapımı_3
                 kullanici.OnayBekleyenUrun.UrunKod = Convert.ToInt32(Txt_Kod.Text);
                 MessageBox.Show("Onaya Gönderildi!");
             }
-
+            AlinmakIstenenUrun();
         }
 
         private void Btn_SatinAl_Click(object sender, EventArgs e)
         {
-            satinAl();
+            if (cmbKimden.SelectedItem.ToString() == "Muhasebeden")
+                MuhasebesatinAl();
+            else if (cmbKimden.SelectedItem.ToString() == "Satıcıdan")
+                satinAl();
         }
         private void cmbUrunleriListele()
         {
@@ -185,6 +190,18 @@ namespace Yazılım_Yapımı_3
                     foreach (var urun in uKullanici.Urunler)
                         if (!(ChckB_UrunAdi.Items.Contains(urun.Ad)))
                             ChckB_UrunAdi.Items.Add(urun.Ad);
+            }
+        }
+        private void cmbMuhasebeListele()
+        {
+            ChckB_UrunAdi.Items.Clear();
+            foreach (var x in muhasebes)
+            {
+                foreach (var a in x.aracilikUrun)
+                    if (!(a.KullaniciAdi == kullanici.KullaniciAdi))
+                        foreach (var u in a.Urunler)
+                            if (!(ChckB_UrunAdi.Items.Contains(u.Ad)))
+                                ChckB_UrunAdi.Items.Add(u.Ad);
             }
         }
 
@@ -232,6 +249,45 @@ namespace Yazılım_Yapımı_3
                     UrunListele();
                 }
         }
+        private void MuhasebesatinAl()
+        {
+            int miktar, kmiktar, tKg = 0;
+            double mpara = 0, para = 0;
+            foreach (var m in muhasebes)
+            {
+                foreach (var k in m.aracilikUrun)
+                    foreach (var u in k.Urunler)
+                        if (u.Ad == ChckB_UrunAdi.SelectedItem.ToString())
+                        {
+                            miktar = Convert.ToInt32(Txt_Miktar.Text);
+                            para = miktar * u.Fiyat;//urunfiyat
+                            kmiktar = miktar - u.KG;
+                            mpara = para * 1.01;//sonfiyat
+                            if (miktar < 0)
+                            {
+                                MessageBox.Show("Ürün Miktarı Yetersiz.");
+                                break;
+                            }
+                            if (kullanici.Bakiye < mpara)
+                            {
+                                MessageBox.Show("Bakiye Yetersiz.");
+                                break;
+                            }
+                            kullanici.Bakiye -= mpara;
+                            k.Bakiye += para;
+                            m.Bakiye += mpara;
+                            tKg = Convert.ToInt32(Txt_Miktar.Text);
+                            kullanici.AlinanUrunler.Add(new Urun() { Ad = u.Ad, KG = tKg, Fiyat = para, AlisTarih = DateTime.Now.Date });
+                            k.SatilanUrunler.Add(new Urun() { Ad = u.Ad, KG = tKg, Fiyat = para, AlisTarih = DateTime.Now.Date });
+                            LBL_Bakiye.Text = kullanici.Bakiye.ToString();
+                            u.KG = kmiktar;
+                            MessageBox.Show(mpara.ToString() + " ₺ Ürün Satın Alındı.");
+                            break;
+                        }
+                UrunListele();
+                cmbMuhasebeListele();
+            }
+        }
         private void btnIstenilen_Click(object sender, EventArgs e)
         {
             kullanici.AlinmayiBekleyenUrun.Ad = cmbIstenenURun.SelectedItem.ToString();
@@ -250,7 +306,16 @@ namespace Yazılım_Yapımı_3
                     excelList.Remove(urun);
             }
             ExcelMapper mapper = new ExcelMapper();
-            mapper.Save(@"urun.xlsx", excelList, "Sheetname", true);
+            var dosyaAdi = @"urun.xlsx";
+            mapper.Save(dosyaAdi, excelList, "Sheetname", true);
+        }
+
+        private void cmbKimden_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (cmbKimden.SelectedItem.ToString() == "Muhasebeden")
+                cmbMuhasebeListele();
+            else if (cmbKimden.SelectedItem.ToString() == "Satıcıdan")
+                cmbUrunleriListele();
         }
 
         private void enDusukFiyat()
@@ -300,7 +365,8 @@ namespace Yazılım_Yapımı_3
                                 tKg += Convert.ToInt32(Txt_Miktar.Text);
                                 kullanici.Bakiye -= para;
                                 uKullanici.Bakiye += para;
-                                kullanici.AlinanUrunler.Add(new Urun() { Ad = urun.Ad, KG = tKg, Fiyat = para });
+                                kullanici.AlinanUrunler.Add(new Urun() { Ad = urun.Ad, KG = tKg, Fiyat = para, AlisTarih = DateTime.Now.Date });
+                                uKullanici.SatilanUrunler.Add(new Urun() { Ad = urun.Ad, KG = tKg, Fiyat = para, AlisTarih = DateTime.Now.Date });
                                 LBL_Bakiye.Text = kullanici.Bakiye.ToString();
                                 urun.KG = miktar;
                                 MessageBox.Show("Ürün Satın Alındı.");

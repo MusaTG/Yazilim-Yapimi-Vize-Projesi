@@ -19,10 +19,14 @@ namespace Yazılım_Yapımı_3
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            uyeList();
             Txt_Sifre.PasswordChar = '*';
         }
 
         public List<Kullanici> kullanicilar = new List<Kullanici>();
+        public List<Muhasebe> muhasebeler = new List<Muhasebe>();
+        public List<Urun> uruns = new List<Urun>();
+        public List<Urun> uruns1 = new List<Urun>();
 
         private void CB_SifreGoster_CheckedChanged(object sender, EventArgs e)
         {
@@ -75,26 +79,47 @@ namespace Yazılım_Yapımı_3
             }
             else
             {
-                foreach(Kullanici x in kullanicilar)
+                foreach (Kullanici x in kullanicilar)
                 {
-                    if(Txt_KullaniciAdi.Text == x.KullaniciAdi && Txt_Sifre.Text == x.Sifre)
+                    if (Txt_KullaniciAdi.Text == x.KullaniciAdi && Txt_Sifre.Text == x.Sifre)
                     {
                         KullaniciGirisi KullaniciEkrani = new KullaniciGirisi();
                         KullaniciEkrani.kullanici = x;
                         KullaniciEkrani.urunIcin = kullanicilar;
+                        KullaniciEkrani.muhasebes = muhasebeler;
                         KullaniciEkrani.ShowDialog();
                         flag = true;
                         return;
                     }
-                    
+
                 }
-                if(flag == false)
+                foreach (Muhasebe x in muhasebeler)
+                {
+                    if (Txt_KullaniciAdi.Text == x.KullaniciAdi && Txt_Sifre.Text == x.Sifre)
+                    {
+                        MuhasebeGirisi KullaniciEkrani = new MuhasebeGirisi();
+                        KullaniciEkrani.kullanicis = kullanicilar;
+                        KullaniciEkrani.ShowDialog();
+                        x.aracilikUrun = KullaniciEkrani.onayKullanici;
+                        flag = true;
+                        return;
+                    }
+                }
+                if (flag == false)
                 {
                     MessageBox.Show("Kullanıcı Adı veya Şifre Yanlış");
                 }
             }
         }
-
-        
+        //hazır üyeler
+        private void uyeList()
+        {
+            muhasebeler.Add(new Muhasebe() { KullaniciAdi = "mtg", Sifre = "123", Bakiye = 0 });
+            muhasebeler.Add(new Muhasebe() { KullaniciAdi = "yg", Sifre = "123", Bakiye = 0 });
+            uruns.Add(new Urun() { Ad = "Arpa", AlisTarih = DateTime.Now.Date, Fiyat = 6, KG = 25 });
+            uruns1.Add(new Urun() { Ad = "Petrol", AlisTarih = DateTime.Now.Date, Fiyat = 11, KG = 18 });
+            kullanicilar.Add(new Kullanici() { KullaniciAdi = "Musa", Sifre = "123", Bakiye = 421, Urunler = uruns });
+            kullanicilar.Add(new Kullanici() { KullaniciAdi = "musa", Sifre = "123", Bakiye = 321, Urunler = uruns1 });
+        }
     }
 }

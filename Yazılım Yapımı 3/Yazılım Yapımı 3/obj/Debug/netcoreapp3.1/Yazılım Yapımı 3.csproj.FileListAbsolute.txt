@@ -53,3 +53,14 @@ C:\Users\yusuf\OneDrive\Belgeler\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Ya
 C:\Users\yusuf\OneDrive\Belgeler\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım Yapımı 3.genruntimeconfig.cache
 C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım Yapımı 3.csproj.AssemblyReference.cache
 C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım_Yapımı_3.MuhasebeGirisi.resources
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\ExcelMapper.dll
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\NPOI.OOXML.dll
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\NPOI.OpenXml4Net.dll
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\NPOI.OpenXmlFormats.dll
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\NPOI.dll
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\ICSharpCode.SharpZipLib.dll
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım Yapımı 3.csproj.CopyComplete

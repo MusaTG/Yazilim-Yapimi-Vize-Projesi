@@ -17,6 +17,7 @@ namespace Yazılım_Yapımı_3
 
         public List<Kullanici> kullanicis = new List<Kullanici>();
         public List<Kullanici> onayKullanici = new List<Kullanici>();
+        public Muhasebe muhasebe = new Muhasebe();
         private void button1_Click(object sender, EventArgs e)
         {
             urunOnay();
@@ -50,6 +51,7 @@ namespace Yazılım_Yapımı_3
 
         private void MuhasebeGirisi_Load(object sender, EventArgs e)
         {
+            lblBakiye.Text = muhasebe.Bakiye.ToString();
             cmbKisiListele();
         }
 

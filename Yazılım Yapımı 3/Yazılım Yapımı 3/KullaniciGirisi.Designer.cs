@@ -453,10 +453,14 @@ namespace Yazılım_Yapımı_3
             // 
             this.cmbKimden.ForeColor = System.Drawing.Color.MidnightBlue;
             this.cmbKimden.FormattingEnabled = true;
+            this.cmbKimden.Items.AddRange(new object[] {
+            "Muhasebeden",
+            "Satıcıdan"});
             this.cmbKimden.Location = new System.Drawing.Point(149, 70);
             this.cmbKimden.Name = "cmbKimden";
             this.cmbKimden.Size = new System.Drawing.Size(162, 38);
             this.cmbKimden.TabIndex = 16;
+            this.cmbKimden.SelectionChangeCommitted += new System.EventHandler(this.cmbKimden_SelectionChangeCommitted);
             // 
             // ChckB_UrunAdi
             // 
@@ -658,6 +662,12 @@ namespace Yazılım_Yapımı_3
             // 
             this.cmbIstenenURun.ForeColor = System.Drawing.Color.Black;
             this.cmbIstenenURun.FormattingEnabled = true;
+            this.cmbIstenenURun.Items.AddRange(new object[] {
+            "Buğday",
+            "Arpa",
+            "Yulaf",
+            "Petrol",
+            "Pamuk"});
             this.cmbIstenenURun.Location = new System.Drawing.Point(149, 70);
             this.cmbIstenenURun.Name = "cmbIstenenURun";
             this.cmbIstenenURun.Size = new System.Drawing.Size(162, 38);
