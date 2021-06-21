@@ -19,6 +19,7 @@ namespace Yazılım_Yapımı_3
         public Kullanici kullanici = new Kullanici();
         public List<Kullanici> urunIcin = new List<Kullanici>();
         public AdminGirisi adminEkrani = new AdminGirisi();
+        public List<Muhasebe> muhasebes = new List<Muhasebe>();
 
         double dolar, euro, sterlin;
 
@@ -177,8 +178,8 @@ namespace Yazılım_Yapımı_3
             }
         }
 
-        List<int> fiyatlar = new List<int>();
-        int enucuz;
+        List<double> fiyatlar = new List<double>();
+        double enucuz;
         void fiyatListele()
         {
             fiyatlar.Clear();
@@ -191,6 +192,45 @@ namespace Yazılım_Yapımı_3
                             fiyatlar.Add(enucuz = urun.Fiyat);
                 }
         }
+        private void AlinmakIstenenUrun()
+        {
+            int miktar, kmiktar;
+            double para = 0;
+            foreach (var k in urunIcin)
+                if (!(k.KullaniciAdi == kullanici.KullaniciAdi))
+                {
+                    foreach (var u in k.Urunler)
+                        if (u.Fiyat <= kullanici.AlinmayiBekleyenUrun.Fiyat && u.KG >= kullanici.AlinmayiBekleyenUrun.KG)
+                        {
+                            miktar = kullanici.AlinmayiBekleyenUrun.KG;
+                            para += miktar * u.Fiyat;
+                            kmiktar = miktar - u.KG;
+                            if (kullanici.Bakiye < para)
+                            {
+                                MessageBox.Show("Bakiye Yetersiz.");
+                                break;
+                            }
+                            kullanici.Bakiye -= para;
+                            k.Bakiye += para;
+                            kullanici.AlinanUrunler.Add(new Urun() { Ad = u.Ad, KG = miktar, Fiyat = para, AlisTarih = DateTime.Now.Date });
+                            k.SatilanUrunler.Add(new Urun() { Ad = u.Ad, KG = miktar, Fiyat = para, AlisTarih = DateTime.Now.Date });
+                            LBL_Bakiye.Text = k.Bakiye.ToString();
+                            u.KG = kmiktar;
+                            MessageBox.Show("İstenilen Ürün Başarıyla Alındı");
+                            break;
+                        }
+                    UrunListele();
+                }
+        }
+        private void btnIstenilen_Click(object sender, EventArgs e)
+        {
+            kullanici.AlinmayiBekleyenUrun.Ad = cmbIstenenURun.SelectedItem.ToString();
+            kullanici.AlinmayiBekleyenUrun.Fiyat = Convert.ToInt32(txtIstenenFiyat.Text);
+            kullanici.AlinmayiBekleyenUrun.KG = Convert.ToInt32(txtIstenenMiktari.Text);
+            MessageBox.Show("Başarıyla Sisteme Eklendi...");
+            AlinmakIstenenUrun();
+        }
+
         private void enDusukFiyat()
         {
             fiyatListele();
@@ -200,7 +240,8 @@ namespace Yazılım_Yapımı_3
         }
         private void satinAl()
         {
-            int miktar, tKg = 0, para = 0;
+            int miktar, tKg = 0;
+            double para = 0;
             foreach (var uKullanici in urunIcin)
                 if (!(uKullanici.KullaniciAdi == kullanici.KullaniciAdi))
                 {

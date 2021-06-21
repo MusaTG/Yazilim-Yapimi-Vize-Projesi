@@ -72,10 +72,30 @@ namespace Yazılım_Yapımı_3
             this.listSiparis = new System.Windows.Forms.ListBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.listSatis = new System.Windows.Forms.ListBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.cmbKimden = new System.Windows.Forms.ComboBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.btnIstenilen = new System.Windows.Forms.Button();
+            this.txtIstenenFiyat = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.cmbIstenenURun = new System.Windows.Forms.ComboBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txtIstenenMiktari = new System.Windows.Forms.TextBox();
+            this.date_Bitis = new System.Windows.Forms.DateTimePicker();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.date_Baslangic = new System.Windows.Forms.DateTimePicker();
+            this.Btn_ExcelAktar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -369,7 +389,9 @@ namespace Yazılım_Yapımı_3
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.Btn_SatinAl);
             this.panel3.Controls.Add(this.Txt_Miktar);
+            this.panel3.Controls.Add(this.label21);
             this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.cmbKimden);
             this.panel3.Controls.Add(this.ChckB_UrunAdi);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.label6);
@@ -382,7 +404,7 @@ namespace Yazılım_Yapımı_3
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label10.Location = new System.Drawing.Point(10, 120);
+            this.label10.Location = new System.Drawing.Point(10, 178);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(133, 30);
             this.label10.TabIndex = 20;
@@ -391,7 +413,7 @@ namespace Yazılım_Yapımı_3
             // Btn_SatinAl
             // 
             this.Btn_SatinAl.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.Btn_SatinAl.Location = new System.Drawing.Point(149, 167);
+            this.Btn_SatinAl.Location = new System.Drawing.Point(149, 225);
             this.Btn_SatinAl.Name = "Btn_SatinAl";
             this.Btn_SatinAl.Size = new System.Drawing.Size(162, 38);
             this.Btn_SatinAl.TabIndex = 19;
@@ -402,7 +424,7 @@ namespace Yazılım_Yapımı_3
             // Txt_Miktar
             // 
             this.Txt_Miktar.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.Txt_Miktar.Location = new System.Drawing.Point(149, 117);
+            this.Txt_Miktar.Location = new System.Drawing.Point(149, 175);
             this.Txt_Miktar.Name = "Txt_Miktar";
             this.Txt_Miktar.Size = new System.Drawing.Size(162, 35);
             this.Txt_Miktar.TabIndex = 18;
@@ -411,7 +433,7 @@ namespace Yazılım_Yapımı_3
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label8.Location = new System.Drawing.Point(53, 66);
+            this.label8.Location = new System.Drawing.Point(57, 124);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 30);
             this.label8.TabIndex = 17;
@@ -421,7 +443,7 @@ namespace Yazılım_Yapımı_3
             // 
             this.ChckB_UrunAdi.ForeColor = System.Drawing.Color.MidnightBlue;
             this.ChckB_UrunAdi.FormattingEnabled = true;
-            this.ChckB_UrunAdi.Location = new System.Drawing.Point(149, 63);
+            this.ChckB_UrunAdi.Location = new System.Drawing.Point(149, 121);
             this.ChckB_UrunAdi.Name = "ChckB_UrunAdi";
             this.ChckB_UrunAdi.Size = new System.Drawing.Size(162, 38);
             this.ChckB_UrunAdi.TabIndex = 16;
@@ -449,7 +471,7 @@ namespace Yazılım_Yapımı_3
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.Maroon;
-            this.label7.Location = new System.Drawing.Point(842, 26);
+            this.label7.Location = new System.Drawing.Point(1246, 26);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(104, 30);
             this.label7.TabIndex = 4;
@@ -459,7 +481,7 @@ namespace Yazılım_Yapımı_3
             // 
             this.LBL_Bakiye.AutoSize = true;
             this.LBL_Bakiye.ForeColor = System.Drawing.Color.Maroon;
-            this.LBL_Bakiye.Location = new System.Drawing.Point(952, 26);
+            this.LBL_Bakiye.Location = new System.Drawing.Point(1356, 26);
             this.LBL_Bakiye.Name = "LBL_Bakiye";
             this.LBL_Bakiye.Size = new System.Drawing.Size(68, 30);
             this.LBL_Bakiye.TabIndex = 5;
@@ -509,29 +531,224 @@ namespace Yazılım_Yapımı_3
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel4.Controls.Add(this.listUrunler);
+            this.panel4.Controls.Add(this.label20);
             this.panel4.Controls.Add(this.label13);
+            this.panel4.Controls.Add(this.listSatis);
             this.panel4.Controls.Add(this.listSiparis);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Location = new System.Drawing.Point(12, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(824, 337);
+            this.panel4.Size = new System.Drawing.Size(1228, 337);
             this.panel4.TabIndex = 10;
+            // 
+            // listSatis
+            // 
+            this.listSatis.ForeColor = System.Drawing.Color.DarkCyan;
+            this.listSatis.FormattingEnabled = true;
+            this.listSatis.ItemHeight = 30;
+            this.listSatis.Location = new System.Drawing.Point(823, 50);
+            this.listSatis.Name = "listSatis";
+            this.listSatis.Size = new System.Drawing.Size(391, 274);
+            this.listSatis.TabIndex = 8;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.ForeColor = System.Drawing.Color.DarkCyan;
+            this.label20.Location = new System.Drawing.Point(823, 14);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(110, 30);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "Sattıklarım";
+            // 
+            // cmbKimden
+            // 
+            this.cmbKimden.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.cmbKimden.FormattingEnabled = true;
+            this.cmbKimden.Location = new System.Drawing.Point(149, 70);
+            this.cmbKimden.Name = "cmbKimden";
+            this.cmbKimden.Size = new System.Drawing.Size(162, 38);
+            this.cmbKimden.TabIndex = 16;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label21.Location = new System.Drawing.Point(55, 73);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(88, 30);
+            this.label21.TabIndex = 17;
+            this.label21.Text = "Kimden:";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.SlateGray;
+            this.panel5.Controls.Add(this.label22);
+            this.panel5.Controls.Add(this.btnIstenilen);
+            this.panel5.Controls.Add(this.txtIstenenMiktari);
+            this.panel5.Controls.Add(this.txtIstenenFiyat);
+            this.panel5.Controls.Add(this.label23);
+            this.panel5.Controls.Add(this.label24);
+            this.panel5.Controls.Add(this.cmbIstenenURun);
+            this.panel5.Controls.Add(this.label25);
+            this.panel5.Controls.Add(this.label26);
+            this.panel5.Location = new System.Drawing.Point(1128, 355);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(327, 337);
+            this.panel5.TabIndex = 4;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(10, 127);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(133, 30);
+            this.label22.TabIndex = 20;
+            this.label22.Text = "Ürün Miktarı:";
+            // 
+            // btnIstenilen
+            // 
+            this.btnIstenilen.ForeColor = System.Drawing.Color.Black;
+            this.btnIstenilen.Location = new System.Drawing.Point(149, 225);
+            this.btnIstenilen.Name = "btnIstenilen";
+            this.btnIstenilen.Size = new System.Drawing.Size(162, 38);
+            this.btnIstenilen.TabIndex = 19;
+            this.btnIstenilen.Text = "Satın Al";
+            this.btnIstenilen.UseVisualStyleBackColor = true;
+            this.btnIstenilen.Click += new System.EventHandler(this.btnIstenilen_Click);
+            // 
+            // txtIstenenFiyat
+            // 
+            this.txtIstenenFiyat.ForeColor = System.Drawing.Color.Black;
+            this.txtIstenenFiyat.Location = new System.Drawing.Point(149, 175);
+            this.txtIstenenFiyat.Name = "txtIstenenFiyat";
+            this.txtIstenenFiyat.Size = new System.Drawing.Size(162, 35);
+            this.txtIstenenFiyat.TabIndex = 18;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.ForeColor = System.Drawing.Color.Black;
+            this.label23.Location = new System.Drawing.Point(8, 178);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(135, 30);
+            this.label23.TabIndex = 17;
+            this.label23.Text = "İstenen Fiyat:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.Location = new System.Drawing.Point(57, 73);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(86, 30);
+            this.label24.TabIndex = 17;
+            this.label24.Text = "Ürünler:";
+            // 
+            // cmbIstenenURun
+            // 
+            this.cmbIstenenURun.ForeColor = System.Drawing.Color.Black;
+            this.cmbIstenenURun.FormattingEnabled = true;
+            this.cmbIstenenURun.Location = new System.Drawing.Point(149, 70);
+            this.cmbIstenenURun.Name = "cmbIstenenURun";
+            this.cmbIstenenURun.Size = new System.Drawing.Size(162, 38);
+            this.cmbIstenenURun.TabIndex = 16;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(931, -99);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(68, 30);
+            this.label25.TabIndex = 15;
+            this.label25.Text = "label8";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.ForeColor = System.Drawing.Color.Black;
+            this.label26.Location = new System.Drawing.Point(10, 16);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(175, 30);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "Alım Satım Ekranı";
+            // 
+            // txtIstenenMiktari
+            // 
+            this.txtIstenenMiktari.ForeColor = System.Drawing.Color.Black;
+            this.txtIstenenMiktari.Location = new System.Drawing.Point(149, 124);
+            this.txtIstenenMiktari.Name = "txtIstenenMiktari";
+            this.txtIstenenMiktari.Size = new System.Drawing.Size(162, 35);
+            this.txtIstenenMiktari.TabIndex = 18;
+            // 
+            // date_Bitis
+            // 
+            this.date_Bitis.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
+            this.date_Bitis.CalendarTitleForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.date_Bitis.Location = new System.Drawing.Point(1246, 188);
+            this.date_Bitis.Name = "date_Bitis";
+            this.date_Bitis.Size = new System.Drawing.Size(209, 35);
+            this.date_Bitis.TabIndex = 20;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.ForeColor = System.Drawing.Color.Maroon;
+            this.label27.Location = new System.Drawing.Point(1246, 155);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(112, 30);
+            this.label27.TabIndex = 19;
+            this.label27.Text = "Bitiş Tarih :";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.ForeColor = System.Drawing.Color.Maroon;
+            this.label28.Location = new System.Drawing.Point(1246, 84);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(161, 30);
+            this.label28.TabIndex = 18;
+            this.label28.Text = "Başlangıç Tarih :\r\n";
+            // 
+            // date_Baslangic
+            // 
+            this.date_Baslangic.Location = new System.Drawing.Point(1246, 117);
+            this.date_Baslangic.Name = "date_Baslangic";
+            this.date_Baslangic.Size = new System.Drawing.Size(209, 35);
+            this.date_Baslangic.TabIndex = 17;
+            // 
+            // Btn_ExcelAktar
+            // 
+            this.Btn_ExcelAktar.ForeColor = System.Drawing.Color.Maroon;
+            this.Btn_ExcelAktar.Location = new System.Drawing.Point(1246, 229);
+            this.Btn_ExcelAktar.Name = "Btn_ExcelAktar";
+            this.Btn_ExcelAktar.Size = new System.Drawing.Size(209, 36);
+            this.Btn_ExcelAktar.TabIndex = 16;
+            this.Btn_ExcelAktar.Text = "Excele Aktar";
+            this.Btn_ExcelAktar.UseVisualStyleBackColor = true;
             // 
             // KullaniciGirisi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1127, 710);
+            this.ClientSize = new System.Drawing.Size(1467, 710);
+            this.Controls.Add(this.date_Bitis);
+            this.Controls.Add(this.label27);
+            this.Controls.Add(this.label28);
+            this.Controls.Add(this.date_Baslangic);
+            this.Controls.Add(this.Btn_ExcelAktar);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.LBL_Bakiye);
             this.Controls.Add(this.label7);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "KullaniciGirisi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "KullaniciGirisi";
+            this.Text = "Kimden:";
             this.Load += new System.EventHandler(this.KullaniciGirisi_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -541,6 +758,8 @@ namespace Yazılım_Yapımı_3
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -591,5 +810,24 @@ namespace Yazılım_Yapımı_3
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox CB_ParaBirimi;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.ComboBox cmbKimden;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.ListBox listSatis;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Button btnIstenilen;
+        private System.Windows.Forms.TextBox txtIstenenMiktari;
+        private System.Windows.Forms.TextBox txtIstenenFiyat;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.ComboBox cmbIstenenURun;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.DateTimePicker date_Bitis;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.DateTimePicker date_Baslangic;
+        private System.Windows.Forms.Button Btn_ExcelAktar;
     }
 }

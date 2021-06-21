@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Elyesa ŞİMŞEK\\.nuget\\packages\\": {}
+    "C:\\Users\\adilk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Elyesa ŞİMŞEK\\Documents\\GitHub\\Yazilim-Yapimi-Vize-Projesi\\Yazılım Yapımı 3\\Yazılım Yapımı 3\\Yazılım Yapımı 3.csproj",
+      "projectUniqueName": "C:\\Users\\adilk\\Documents\\GitHub\\Yazilim-Yapimi-Vize-Projesi\\Yazılım Yapımı 3\\Yazılım Yapımı 3\\Yazılım Yapımı 3.csproj",
       "projectName": "Yazılım Yapımı 3",
-      "projectPath": "C:\\Users\\Elyesa ŞİMŞEK\\Documents\\GitHub\\Yazilim-Yapimi-Vize-Projesi\\Yazılım Yapımı 3\\Yazılım Yapımı 3\\Yazılım Yapımı 3.csproj",
-      "packagesPath": "C:\\Users\\Elyesa ŞİMŞEK\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Elyesa ŞİMŞEK\\Documents\\GitHub\\Yazilim-Yapimi-Vize-Projesi\\Yazılım Yapımı 3\\Yazılım Yapımı 3\\obj\\",
+      "projectPath": "C:\\Users\\adilk\\Documents\\GitHub\\Yazilim-Yapimi-Vize-Projesi\\Yazılım Yapımı 3\\Yazılım Yapımı 3\\Yazılım Yapımı 3.csproj",
+      "packagesPath": "C:\\Users\\adilk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\adilk\\Documents\\GitHub\\Yazilim-Yapimi-Vize-Projesi\\Yazılım Yapımı 3\\Yazılım Yapımı 3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Elyesa ŞİMŞEK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adilk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -47,7 +47,6 @@ namespace Yazılım_Yapımı_3
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.Btn_Kaydol = new System.Windows.Forms.Button();
-            this.Btn_Geri = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Txt_Soyad
@@ -210,28 +209,17 @@ namespace Yazılım_Yapımı_3
             this.Btn_Kaydol.ForeColor = System.Drawing.Color.Maroon;
             this.Btn_Kaydol.Location = new System.Drawing.Point(173, 412);
             this.Btn_Kaydol.Name = "Btn_Kaydol";
-            this.Btn_Kaydol.Size = new System.Drawing.Size(104, 41);
+            this.Btn_Kaydol.Size = new System.Drawing.Size(135, 41);
             this.Btn_Kaydol.TabIndex = 21;
             this.Btn_Kaydol.Text = "Kaydol";
             this.Btn_Kaydol.UseVisualStyleBackColor = true;
             this.Btn_Kaydol.Click += new System.EventHandler(this.Btn_Kaydol_Click);
-            // 
-            // Btn_Geri
-            // 
-            this.Btn_Geri.ForeColor = System.Drawing.Color.Maroon;
-            this.Btn_Geri.Location = new System.Drawing.Point(283, 412);
-            this.Btn_Geri.Name = "Btn_Geri";
-            this.Btn_Geri.Size = new System.Drawing.Size(104, 41);
-            this.Btn_Geri.TabIndex = 22;
-            this.Btn_Geri.Text = "Geri";
-            this.Btn_Geri.UseVisualStyleBackColor = true;
             // 
             // KullaniciKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(414, 492);
-            this.Controls.Add(this.Btn_Geri);
             this.Controls.Add(this.Btn_Kaydol);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.Txt_Adres);
@@ -288,6 +276,5 @@ namespace Yazılım_Yapımı_3
         private System.Windows.Forms.TextBox Txt_A;
         private System.Windows.Forms.TextBox Txt_Sifre;
         private System.Windows.Forms.Button Btn_Kaydol;
-        private System.Windows.Forms.Button Btn_Geri;
     }
 }

@@ -21,6 +21,7 @@ namespace Yazılım_Yapımı_3
 
         public List<Urun> Urunler = new List<Urun>();
         public List<Urun> AlinanUrunler = new List<Urun>();
+        public List<Urun> SatilanUrunler = new List<Urun>();
 
         public Urun OnayBekleyenUrun = new Urun();
         public Urun AlinmayiBekleyenUrun = new Urun();

@@ -22,7 +22,6 @@ C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3
 C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\Yazılım Yapımı 3.runtimeconfig.dev.json
 C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\Yazılım Yapımı 3.dll
 C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\bin\Debug\netcoreapp3.1\Yazılım Yapımı 3.pdb
-C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım Yapımı 3.csprojAssemblyReference.cache
 C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım_Yapımı_3.AdminGirisi.resources
 C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım_Yapımı_3.Form1.resources
 C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım_Yapımı_3.KullaniciGirisi.resources
@@ -52,3 +51,5 @@ C:\Users\yusuf\OneDrive\Belgeler\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Ya
 C:\Users\yusuf\OneDrive\Belgeler\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım Yapımı 3.dll
 C:\Users\yusuf\OneDrive\Belgeler\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım Yapımı 3.pdb
 C:\Users\yusuf\OneDrive\Belgeler\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım Yapımı 3.genruntimeconfig.cache
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım Yapımı 3.csproj.AssemblyReference.cache
+C:\Users\adilk\Documents\GitHub\Yazilim-Yapimi-Vize-Projesi\Yazılım Yapımı 3\Yazılım Yapımı 3\obj\Debug\netcoreapp3.1\Yazılım_Yapımı_3.MuhasebeGirisi.resources
